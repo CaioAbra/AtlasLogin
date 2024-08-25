@@ -1,19 +1,19 @@
 :root {
     --faixaHead-bg-color: linear-gradient(87.36deg, #F0A647 9.47%, #BA4C0E 128.61%);
-    --body-bg-color: #060a15;
+    --body-bg-color: #212121;
     --card-bg-color: rgba(19, 39, 63, 0.5);
     --text-primary-color: #82848a;
     --text-secondary-color: #FFFFFF;
     --button-primary-bg: linear-gradient(87.36deg, #F0A647 9.47%, #BA4C0E 128.61%);
     --button-primary-hover-bg: #34c77b;
-    --button-primary-text: #060A15;
-    --input-bg-color: #060A15;
+    --button-primary-text: #212121;
+    --input-bg-color: #212121;
     --input-text-color: #ffffff;
     --input-focus-border: #F0A648;
     --terms-color: #F0A648;
-    --checkmark-bg: #060A15;
+    --checkmark-bg: #212121;
     --checkmark-checked-bg: #F0A648;
-    --checkmark-border: #060A15;
+    --checkmark-border: #212121;
 }
 
 @font-face {
@@ -39,15 +39,21 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
-    background-color: var(--body-bg-color);
+    /* background-color: var(--body-bg-color); */
     font-family: MundialRegular, sans-serif;
+    align-content: center;
+    background: url("./src/img/BG02.webp");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
-section.faixaHead {
+/* section.faixaHead {
     background: var(--faixaHead-bg-color);
     height: 15vh;
     min-height: 8rem;
-}
+} */
 
 .logoBemVindo {
     @media screen and (max-width:768px) {
@@ -57,7 +63,7 @@ section.faixaHead {
     }
 }
 
-.logoBemVindo svg {
+.logoBemVindo img {
     width: 12rem;
 }
 
@@ -66,7 +72,7 @@ section.faixaHead {
 }
 
 .card {
-    background: var(--card-bg-color);
+    background: #090909;
     backdrop-filter: blur(.7rem);
     border: none;
     border-radius: 15px;
