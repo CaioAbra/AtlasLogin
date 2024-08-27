@@ -72,7 +72,7 @@ body {
 }
 
 .card {
-    background: #090909;
+    background: rgba(9, 9, 9, 0.5);
     backdrop-filter: blur(.7rem);
     border: none;
     border-radius: 15px;
