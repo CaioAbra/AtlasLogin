@@ -81,6 +81,22 @@ body {
     min-height: 30rem;
 }
 
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 0.6px;
+    background: linear-gradient(0deg, #f99f38, #828282);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+}
+
 .nav-tabs .nav-link {
     color: var(--text-primary-color);
     font-family: Poppins-Medium, sans-serif;
